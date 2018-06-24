@@ -1,2 +1,0 @@
-# RayAutomation
-Test Automation
