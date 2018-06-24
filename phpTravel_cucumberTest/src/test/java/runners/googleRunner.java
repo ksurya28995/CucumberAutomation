@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 */ 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber-html-report", "json:target/cucumber-json-test-report/report.json"}, 
+@CucumberOptions(plugin = {"pretty", "html:target/googleRunner-html-report", "json:target/googleRunner-json-report/report.json"}, 
 		features = {"src/test/resources/FuncFeatureFile/googleSearch.feature" }, 
 		glue = {"stepsDefinition","supports"},
 		dryRun = false, 	
