@@ -21,7 +21,7 @@ public class phpTravelSteps {
 	/**
 	 * Method is used as a constructor
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public phpTravelSteps(DriverManager driverObj) throws Exception {
 		_driverObj = driverObj;

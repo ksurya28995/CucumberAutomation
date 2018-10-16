@@ -14,7 +14,7 @@ public class phpTravelNavigateActions extends phpTravelNavigateObjects{
 	/**
 	 * Method is used as a constructor
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public phpTravelNavigateActions(DriverManager driverObj) {
 		driver = driverObj.getDriver();
@@ -25,7 +25,7 @@ public class phpTravelNavigateActions extends phpTravelNavigateObjects{
 	/**
 	 * Method is used to navigate to the site 
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void navigateToSite(String page) throws Throwable {
 		String loginUrl = "";
@@ -41,7 +41,7 @@ public class phpTravelNavigateActions extends phpTravelNavigateObjects{
 	/**
 	 * Method is used to navigate to the signup page
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void navigateToSignUpPage() throws Throwable {
 		commObj.waitForElement(myAccountBtn);
@@ -53,7 +53,7 @@ public class phpTravelNavigateActions extends phpTravelNavigateObjects{
 	/**
 	 * Method is used to navigate to the login page
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void navigateToLoginPage() throws Throwable {
 		commObj.waitForElement(myAccountBtn);

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Method is used to hold the driver of the browser
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class DriverManager {
 

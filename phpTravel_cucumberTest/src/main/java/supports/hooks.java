@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 /**
  * Class is used to do the initial task of the testcase
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class hooks {
 	private static WebDriver driver;
@@ -22,7 +22,7 @@ public class hooks {
 	/**
 	 * Method is used to run at first if provided in the feature file, used to open the firefox browser
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@Before("@firefox")
 	public void initFirefoxBrowser() throws Exception {
@@ -39,7 +39,7 @@ public class hooks {
 	/**
 	 * Method is used to run at first if provided in the feature file, used to open the chrome browser
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@Before("@chrome")
 	public void initChromeBrowser() throws Exception {
@@ -56,7 +56,7 @@ public class hooks {
 	/**
 	 * Method is used to run at last if provided in the feature file, used to close the browser
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@After("@quit")
 	public void quitDriver() throws Throwable {

@@ -14,7 +14,7 @@ import supports.commonUtilities;
 /**
  * Class is used to do validations on the site
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 
@@ -28,7 +28,7 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 	 * 
 	 * @param driverManager driver of the UI
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public phpTravelLogInOutActions(DriverManager driverObj) throws Exception {
 		driver = driverObj.getDriver();
@@ -40,7 +40,7 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 	/**
 	 * Method is used to login to the site
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void loginFlow() throws Throwable {
 		phpTravelNavObj.navigateToLoginPage();
@@ -54,7 +54,7 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 	/**
 	 * Method is used to logout of the site
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void logoutFlow() throws Throwable {
 		commObj.waitForElement(myAccountBtn);
@@ -67,7 +67,7 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 	/**
 	 * Method is used to signup in the site
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void signUp() throws Throwable {
 		arrData = commObj.readCsvData("signUp_Php.csv");

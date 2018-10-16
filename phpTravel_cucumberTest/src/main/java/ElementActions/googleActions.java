@@ -7,7 +7,7 @@ import TextContest.DriverManager;
 /**
  * Method is used to test the google page
  * 
- * @author surya.k.kumaresan
+ * @author SuryaRay
  */
 public class googleActions extends googleObjects{
 	WebDriver _driver;
@@ -15,7 +15,7 @@ public class googleActions extends googleObjects{
 	/**
 	 * Method is used as a constructor
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public googleActions(DriverManager driverObj) {
 		_driver = driverObj.getDriver();
@@ -25,7 +25,7 @@ public class googleActions extends googleObjects{
 	/**
 	 * Method is used to add text in the google search field
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void addSearchTxt() throws Throwable {
 		searchBox.sendKeys("Yes");
@@ -37,7 +37,7 @@ public class googleActions extends googleObjects{
 	/**
 	 * Method is used to check the result is displayed
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public void checkPage() throws Throwable {
 		resultStats.isDisplayed();

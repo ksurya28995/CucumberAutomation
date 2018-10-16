@@ -16,7 +16,7 @@ public class googleSteps {
 	/**
 	 * Method is used as a constructor
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	public googleSteps(DriverManager driverObj) {
 		_driverObj = driverObj;
@@ -31,7 +31,7 @@ public class googleSteps {
 	 * 
 	 * @param  \"([^\"]*)\  <-this will get the value from the steps of the cucumber feature file
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@Given("^Open \"([^\"]*)\" page in the browser$")
 	public void openPageInTheBrowser(String url) throws Throwable {
@@ -41,7 +41,7 @@ public class googleSteps {
 	/**
 	 * Method is used to do the testing steps of the test
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@When("^search text is added$")
 	public void searchTextIsAdded() throws Throwable {
@@ -51,7 +51,7 @@ public class googleSteps {
 	/**
 	 * Method is used to do finishing steps of the test
 	 * 
-	 * @author surya.k.kumaresan
+	 * @author SuryaRay
 	 */
 	@Then("^check the page$")
 	public void check_the_page() throws Throwable {
