@@ -7,7 +7,8 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 /*
- * Method is used to run cucumber PHP travels testcase
+ * Method is used to run cucumber PHP travels featue file
+ * 
  * @author Surya.K
 */ 
 

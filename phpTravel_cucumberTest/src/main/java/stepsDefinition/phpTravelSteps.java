@@ -18,6 +18,11 @@ public class phpTravelSteps {
 	phpTravelLogInOutActions phpTravelLogObj;
 	phpTravelNavigateActions phpTravelNavObj;
 	
+	/**
+	 * Method is used as a constructor
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	public phpTravelSteps(DriverManager driverObj) throws Exception {
 		_driverObj = driverObj;
 		phpTravelLogObj = new phpTravelLogInOutActions(_driverObj);

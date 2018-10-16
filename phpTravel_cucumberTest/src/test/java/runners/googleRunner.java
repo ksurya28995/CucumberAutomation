@@ -7,8 +7,9 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 /*
- * Method is used to run cucumber google testcase
- * @author Surya.K
+ * Method is used to run cucumber google featue file
+ * 
+ * @author Surya
 */ 
 
 @RunWith(Cucumber.class)

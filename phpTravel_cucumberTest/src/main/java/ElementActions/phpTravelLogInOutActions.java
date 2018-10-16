@@ -11,7 +11,11 @@ import ElementObjects.phpTravelLogInOutObjects;
 import TextContest.DriverManager;
 import supports.PropertyManager;
 import supports.commonUtilities;
-
+/**
+ * Class is used to do validations on the site
+ * 
+ * @author surya.k.kumaresan
+ */
 public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 
 	WebDriver driver;
@@ -19,6 +23,13 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 	commonUtilities commObj;
 	phpTravelNavigateActions phpTravelNavObj;
 	
+	/**
+	 * Method is used as a constructor
+	 * 
+	 * @param driverManager driver of the UI
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	public phpTravelLogInOutActions(DriverManager driverObj) throws Exception {
 		driver = driverObj.getDriver();
 		commObj = new commonUtilities(driverObj);
@@ -26,6 +37,11 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * Method is used to login to the site
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	public void loginFlow() throws Throwable {
 		phpTravelNavObj.navigateToLoginPage();
 		commObj.setTextBox(loUsernameFld, PropertyManager.getPropertyVal("email"));
@@ -35,6 +51,11 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 		commObj.verify(userNameText);
 	}
 	
+	/**
+	 * Method is used to logout of the site
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	public void logoutFlow() throws Throwable {
 		commObj.waitForElement(myAccountBtn);
 		commObj.clickElement(myAccountBtn);
@@ -43,6 +64,11 @@ public class phpTravelLogInOutActions extends phpTravelLogInOutObjects {
 		commObj.verify(loUsernameFld);
 	}	
 	
+	/**
+	 * Method is used to signup in the site
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	public void signUp() throws Throwable {
 		arrData = commObj.readCsvData("signUp_Php.csv");
 		phpTravelNavObj.navigateToSignUpPage();

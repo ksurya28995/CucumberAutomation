@@ -10,11 +10,20 @@ import TextContest.DriverManager;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * Class is used to do the initial task of the testcase
+ * 
+ * @author surya.k.kumaresan
+ */
 public class hooks {
 	private static WebDriver driver;
 	DriverManager driverObj = new DriverManager();
 
+	/**
+	 * Method is used to run at first if provided in the feature file, used to open the firefox browser
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	@Before("@firefox")
 	public void initFirefoxBrowser() throws Exception {
 			//System.setProperty("webdriver.gecko.driver", "D:\\Softwares\\eclipse_jar\\geckodriver.exe");
@@ -27,6 +36,11 @@ public class hooks {
 			driverObj.setDriver(driver);
 	}
 
+	/**
+	 * Method is used to run at first if provided in the feature file, used to open the chrome browser
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	@Before("@chrome")
 	public void initChromeBrowser() throws Exception {
 			//System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\eclipse_jar\\chromedriver.exe");
@@ -39,6 +53,11 @@ public class hooks {
 			driverObj.setDriver(driver);
 	}
 	
+	/**
+	 * Method is used to run at last if provided in the feature file, used to close the browser
+	 * 
+	 * @author surya.k.kumaresan
+	 */
 	@After("@quit")
 	public void quitDriver() throws Throwable {
 		driver.quit();
